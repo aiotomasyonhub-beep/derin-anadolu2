@@ -5,3 +5,10 @@ dist/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Herkese açık depoya GİTMEYENLER
+# metinler/: Word belgesi düzenleyenin kullanıcı adını meta verisinde saklıyor;
+#            oyun bu dosyaları kullanmıyor.
+metinler/
+# Yerel geliştirme ayarları
+.claude/
