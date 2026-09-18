@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#07060d">
+<title>Derin Anadolu: Ahit Sandığı</title>
+
+<!-- Paylaşım / arama motoru kartı -->
+<meta name="description" content="Zonguldaklı Davut Usta, hurdadan yaptığı Köstebek-V1 ile yerin yedi kat dibine iniyor. Dedesinin defteri bir hazine haritası değil, bir bakım kaydı. 16-bit Anadolu pixel-art madencilik oyunu.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Derin Anadolu: Ahit Sandığı">
+<meta property="og:description" content="Kaz, maden topla, sat, aracını güçlendir, daha derine in. Karanlık Holding kırk yıldır ihaleyi hep Ahi soyundan bir ustaya veriyor — sebebini merak etme.">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: harici dosya yok, 16x16 piksel matkap ucu SVG olarak gömülü.
+     Bu sayede oyun tek klasör kalır ve hangi sunucuya atılırsa atılsın çalışır. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%2307060d'/%3E%3Crect x='3' y='2' width='10' height='6' fill='%23c2571f'/%3E%3Crect x='3' y='2' width='10' height='1' fill='%23f08a3c'/%3E%3Crect x='8' y='3' width='4' height='3' fill='%2335f0e8'/%3E%3Crect x='5' y='8' width='6' height='3' fill='%234a4a5a'/%3E%3Crect x='6' y='11' width='4' height='2' fill='%23ffd23f'/%3E%3Crect x='7' y='13' width='2' height='2' fill='%23ffd23f'/%3E%3C/svg%3E">
+
+<link rel="stylesheet" href="css/style.css?v=1.2">
+</head>
+<body>
+
+<div id="cabinet">
+  <!-- =========================================================
+       OYUN EKRANI
+       Canvas iç çözünürlük 640x360 (16-bit arcade oranı),
+       CSS ile 2x-3x ölçeklenir. image-rendering: pixelated
+       sayesinde pikseller net kalır.
+       ========================================================= -->
+  <div id="screen">
+    <canvas id="game" width="640" height="360"></canvas>
+
+    <!-- ================= HUD ================= -->
+    <div id="hud" class="hidden">
+      <div class="hud-row hud-top">
+        <div class="gauge">
+          <span class="gauge-label">MAZOT</span>
+          <div class="bar"><div id="fuelBar" class="bar-fill fuel"></div></div>
+          <span id="fuelText" class="gauge-num">0</span>
+        </div>
+        <div class="gauge">
+          <span class="gauge-label">ŞASİ</span>
+          <div class="bar"><div id="hullBar" class="bar-fill hull"></div></div>
+          <span id="hullText" class="gauge-num">0</span>
+        </div>
+        <div class="gauge">
+          <span class="gauge-label">KASA</span>
+          <div class="bar"><div id="cargoBar" class="bar-fill cargo"></div></div>
+          <span id="cargoText" class="gauge-num">0</span>
+          <span id="heavyTag" class="tag hidden">AĞIR YÜK</span>
+        </div>
+      </div>
+
+      <div class="hud-row hud-right">
+        <div id="money" class="neon-yellow">₺0</div>
+        <div id="depth" class="neon-cyan">0 m</div>
+        <div id="wreckHud" class="hidden">🛠 ENKAZ <span id="wreckInfo"></span></div>
+      </div>
+
+      <div id="itembar">
+        <div class="item" data-item="dinamit"><b>1</b><span>DİNAMİT</span><i id="qty-dinamit">0</i></div>
+        <div class="item" data-item="mazot"><b>2</b><span>BİDON</span><i id="qty-mazot">0</i></div>
+        <div class="item" data-item="isinlayici"><b>3</b><span>IŞINLA</span><i id="qty-isinlayici">0</i></div>
+        <div class="item" data-item="macun"><b>4</b><span>MACUN</span><i id="qty-macun">0</i></div>
+      </div>
+
+      <div id="bossbar" class="hidden">
+        <span class="boss-name" id="bossName">ŞEYTAN</span>
+        <div class="bar big"><div id="bossBar" class="bar-fill boss"></div></div>
+      </div>
+
+      <div id="prompt" class="hidden"></div>
+      <div id="toasts"></div>
+
+      <!-- TELSİZ: derinliğe göre gelen anlatı mesajları. Parazit seviyesi
+           (s0/s1/s2) derinlikle artar; 2. seviyede kenarlık kırmızıya döner. -->
+      <div id="radio" class="hidden">
+        <span class="radio-who"></span>
+        <p class="radio-text"></p>
+      </div>
+
+      <!-- Sistem düğmeleri: her platformda görünür, dokunmatikte büyür -->
+      <div id="sysbtns">
+        <button id="btnSound" title="Ses aç/kapat">♪</button>
+        <button id="btnPause" title="Duraklat">❚❚</button>
+      </div>
+
+      <!-- =====================================================
+           DOKUNMATİK KONTROLLER
+           Yalnızca dokunmatik cihazlarda görünür (js/game.js
+           içindeki isTouch tespiti). Yarı saydam, oyun alanını
+           kapatmayacak biçimde köşelere yaslanır.
+           ===================================================== -->
+      <div id="touch" class="hidden">
+        <div class="tgroup tleft">
+          <button class="tbtn" data-k="left">◀</button>
+          <button class="tbtn" data-k="right">▶</button>
+        </div>
+        <div class="tgroup tright">
+          <div class="tcol">
+            <button class="tbtn slow" data-k="slow">YAVAŞ</button>
+            <button class="tbtn dig"  data-k="down">KAZ</button>
+          </div>
+          <button class="tbtn fly"  data-k="up">UÇ</button>
+        </div>
+        <button id="tbtnE" class="tbtn act hidden" data-k="E">E<small>GİR</small></button>
+      </div>
+    </div>
+
+    <!-- ================= EKRANLAR (MODAL) ================= -->
+    <div id="overlay" class="hidden">
+      <div id="panel"></div>
+    </div>
+  </div>
+
+  <div id="cabinet-foot">
+    <span class="neon-pink">DERİN ANADOLU</span>
+    <span class="hint">WASD / Yön tuşları · <b>SHIFT</b> yavaş kaz · <b>E</b> girmek · <b>1-4</b> eşya · <b>ESC</b> duraklat</span>
+  </div>
+</div>
+
+<!-- Yükleme sırası önemlidir: her dosya window üzerine global sınıf/sabit bırakır.
+     ES module KULLANILMADI ki index.html çift tıklanarak (file://) da açılabilsin.
+
+     ?v=X.Y = önbellek kırıcı. Sürüm yükseltirken buradaki, style.css'teki ve
+     config.js'teki VERSION numarasını birlikte artır — yoksa oyuncuların
+     tarayıcısı eski dosyaları kullanmaya devam eder. -->
+<script src="js/config.js?v=1.2"></script>
+<script src="js/utils.js?v=1.2"></script>
+<script src="js/story.js?v=1.2"></script>
+<script src="js/audio.js?v=1.2"></script>
+<script src="js/art.js?v=1.2"></script>
+<script src="js/world.js?v=1.2"></script>
+<script src="js/entities.js?v=1.2"></script>
+<script src="js/player.js?v=1.2"></script>
+<script src="js/boss.js?v=1.2"></script>
+<script src="js/ui.js?v=1.2"></script>
+<script src="js/shops.js?v=1.2"></script>
+<script src="js/game.js?v=1.2"></script>
+</body>
+</html>

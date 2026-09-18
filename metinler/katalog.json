@@ -1,0 +1,1212 @@
+{
+  "surum": "1.2",
+  "olusturma": "2026-09-18",
+  "metinler": [
+    {
+      "id": "baslik.h1",
+      "bolum": "1 · Açılış ekranı",
+      "text": "DERİN ANADOLU"
+    },
+    {
+      "id": "baslik.h2",
+      "bolum": "1 · Açılış ekranı",
+      "text": "Ahit Sandığı"
+    },
+    {
+      "id": "baslik.paragraf1",
+      "bolum": "1 · Açılış ekranı",
+      "text": "Zonguldak'ın paslı sanayisinde, Davut Usta hurdaları birleştirerek kendi sondaj aracını yaptı. **Köstebek-V1**. Görünürdeki hedefi oldukça basitti üç beş ton kömür çıkararak **Karanlık Holding**'e taşeronluk yapmak ve ensesindeki borç yükünden nihayet kurtulmak."
+    },
+    {
+      "id": "baslik.paragraf2",
+      "bolum": "1 · Açılış ekranı",
+      "text": "Fakat dedesinden kalan şifreli defter ezber bozuyor. Elindeki şey bir hazine haritası değil. Yüzyıllık bir nöbet defteri. Ahi loncasından beri her kuşakta bir usta ocağa inmiş, karanlıktaki mührü kontrol edip \"duruyor\" yazarak yukarı çıkmış. Aşağıda neyin hapsedildiğini ise deftere yazmaya kimse cesaret edememiş."
+    },
+    {
+      "id": "baslik.paragraf3",
+      "bolum": "1 · Açılış ekranı",
+      "text": "Sorun şu: Karanlık Holding kırk yıldır bu havzada ihale açıyor. Ve ihaleyi hep **Ahi soyundan bir ustaya** veriyor."
+    },
+    {
+      "id": "baslik.paragraf4",
+      "bolum": "1 · Açılış ekranı",
+      "text": "Mazotunu idareli kullan, matkabını keskin tut. Ve telsizde ne söylenirse söylensin — aşağıda yalnız değilsin."
+    },
+    {
+      "id": "telsiz.01",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Davut Usta hoş geldin. Taşeronluk sözleşmeni onayladım. Sen kömürü çıkar biz alıcaz. Basit iş."
+    },
+    {
+      "id": "telsiz.02",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Güzel gidiyorsun. Kasan dolunca yukarı çık, Rıza Başkan hesabı kapatacak. Acele etmene gerek yok bizim için derinlik önemli değil, süreklilik önemli."
+    },
+    {
+      "id": "telsiz.03",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Küçük bir hatırlatma: sözleşmende derinlik sınırı yok. Ne kadar inersen o kadar prim alırsın. Şirket cesareti ödüllendirir."
+    },
+    {
+      "id": "telsiz.04",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Bin metre. Tebrikler, çoğu taşeron burada döner.\n\n…Deden de dönmemişti."
+    },
+    {
+      "id": "telsiz.05",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Şaşırma. Bu havzada çalışmış her ailenin dosyası bizde var. Sizinki kalın. 1953'ten beri değil — çok daha eskiden beri."
+    },
+    {
+      "id": "telsiz.06",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Anomali teyit edildi. Koordinat taşeronun mevkiiyle çakışıyor. Yoğunluk okunamıyor — cihaz sıfır veriyor. Sıfır, boşluk demek değil."
+    },
+    {
+      "id": "telsiz.07",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Davut Usta, bir şey soracağım. Deden sana bir defter bıraktı mı? Şifreli, elle çizilmiş bir şey."
+    },
+    {
+      "id": "telsiz.08",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Cevap vermedin. Sorun değil. Zaten biliyorum."
+    },
+    {
+      "id": "telsiz.09",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Aşağıda üzerinde yazı olan taşlar bulacaksın. Okuma. Şirket politikası. …Bu bir rica değil."
+    },
+    {
+      "id": "telsiz.10",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Kırk yılda indirilen otuz bir sondaj aracının tamamı bu derinlikte kayboldu. Hiçbiri Ahi soyundan değildi.\n\nBu kayıt silinmeliydi."
+    },
+    {
+      "id": "telsiz.11",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Yukarıda Remzi'nin semaveri kaynıyor şimdi. Duyuyorum. Kırk yıldır duyuyorum.\n\nSen o çayı içemeyeceksin Davut Usta."
+    },
+    {
+      "id": "telsiz.12",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Kurumsal zırvaları kesiyorum, vakit dar. Aşağıda bir kapı var. Kilidini bizzat Hz. Süleyman vurmuş. Dünya tarihi Ahit Sandığı'nı kayıp sanıyor ama yalan sandık kayıp değil o kapının ta kendisi. Süleyman onu oraya saklamak için gömmedi. Aşağıdakini içeride tutmak için onu oraya koydu."
+    },
+    {
+      "id": "telsiz.13",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Ahiler yüz kuşak indi. Mührü yokladı, \"duruyor\" diye yazdı, yukarı çıktı. Hiçbiri açmadı.\n\nSen açacaksın. Çünkü mühür ancak Davut’un elinden açılır."
+    },
+    {
+      "id": "telsiz.14",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Korkma. Ben de bir zamanlar senin gibiydim.\n\n1867'de. Zonguldak sancağında imtiyazı ben almıştım. O gün bugündür ihale açıyorum."
+    },
+    {
+      "id": "telsiz.15",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "Kırk yıl bekledim. Kırk yıl mı? Yüz yıl. Bin yıl. Sayı önemini yitiriyor burada.\n\nİn. Kapı seni tanıyor."
+    },
+    {
+      "id": "telsiz.16",
+      "bolum": "2 · Telsiz mesajları",
+      "text": "—— telsizde yalnızca nefes sesi var ——"
+    },
+    {
+      "id": "telsiz.konusan1",
+      "bolum": "2b · Telsizde konuşanların adları",
+      "text": "SERMET BEY · KARANLIK HOLDİNG"
+    },
+    {
+      "id": "telsiz.konusan2",
+      "bolum": "2b · Telsizde konuşanların adları",
+      "text": "SERMET BEY"
+    },
+    {
+      "id": "telsiz.konusan3",
+      "bolum": "2b · Telsizde konuşanların adları",
+      "text": "SİSMİK EKİP · KAYIT"
+    },
+    {
+      "id": "telsiz.konusan4",
+      "bolum": "2b · Telsizde konuşanların adları",
+      "text": "SERMET"
+    },
+    {
+      "id": "telsiz.konusan5",
+      "bolum": "2b · Telsizde konuşanların adları",
+      "text": "???"
+    },
+    {
+      "id": "defter.1.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Hitit tableti · çivi yazısı"
+    },
+    {
+      "id": "defter.1.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Aşağıdakinin adı yazılmaz. Yazanın dili tutulur.\""
+    },
+    {
+      "id": "defter.2.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Urartu levhası"
+    },
+    {
+      "id": "defter.2.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Yedi kat aşağıda bir kapı. Yedi kat yukarıda gök. Arada biz varız, kapıyı bekleriz.\""
+    },
+    {
+      "id": "defter.3.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Aramice parşömen"
+    },
+    {
+      "id": "defter.3.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Süleyman sandığı gömmedi. Sandık aslında bi’ kapı.\""
+    },
+    {
+      "id": "defter.4.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Osmanlı fermanı · 1867"
+    },
+    {
+      "id": "defter.4.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Zonguldak sancağında kömür imtiyazı Sermet Efendi'ye tevcih olunmuştur.\"\n\nMühür taze. Kâğıt yüz altmış yaşında."
+    },
+    {
+      "id": "defter.5.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Ahi mührü · dövme demir"
+    },
+    {
+      "id": "defter.5.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Baktım. Duruyor. Sıradaki sensin.\"\n\nAltında on yedi farklı ustanın damgası. Sonuncusu dedenin."
+    },
+    {
+      "id": "defter.6.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Defter sayfası · 1953"
+    },
+    {
+      "id": "defter.6.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Dedem indi. Ben indim. Oğlum inmesin.\"\n\nEl yazısı titrek. Mürekkep yer yer dağılmış."
+    },
+    {
+      "id": "defter.7.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Fütüvvetname parçası"
+    },
+    {
+      "id": "defter.7.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Usta olan kapıyı açan değildir. Usta olan, kapıyı kapalı tutandır.\""
+    },
+    {
+      "id": "defter.8.baslik",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "Sondaj kaydı · Karanlık Holding"
+    },
+    {
+      "id": "defter.8.metin",
+      "bolum": "3 · Defter sayfaları (tabletler)",
+      "text": "\"Ünite 31. Derinlik 4.900 m. Pilot Ahi soyundan değil. İletişim kesildi.\"\n\nOtuz bir satır. Hepsi aynı."
+    },
+    {
+      "id": "boss.h1",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "-10.000 METRE"
+    },
+    {
+      "id": "boss.h2",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "KAPI"
+    },
+    {
+      "id": "boss.paragraf1",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "Obsidyen biter ve Köstebek-V1 devasa bir boşluğa düşer. Ortada kaynayan bir lav havuzu; havuzun üstünde, hiçbir şeye bağlı olmadan asılı duran altın kaplı bir sandık."
+    },
+    {
+      "id": "boss.paragraf2",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "**Ahit Sandığı.** Kayıp değil. Kayıp olmamış hiç. Süleyman onu buraya bir kapı olarak koymuş."
+    },
+    {
+      "id": "boss.paragraf3",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "Karşıda Sermet Bey duruyor. Takım elbisesi hâlâ üzerinde. Yüz altmış yıllık."
+    },
+    {
+      "id": "boss.diyalog1",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "SERMET BEY: “Teşekkür ederim Davut Usta. Kırk yıldır ihale açıyorum, bir bekçi soyu kazsın diye. Matkabın her vuruşu mührü biraz daha inceltti. Ben açamazdım. **Sen açtın.**”"
+    },
+    {
+      "id": "boss.paragraf4",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "Sandık yerinden oynuyor. Lav havuzundan yükselen şey Sermet Bey'i bir giysi gibi üstüne alıyor."
+    },
+    {
+      "id": "boss.diyalog2",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "“Bana Deccal dediler. İblis dediler. Ahriman dediler. Her kavim başka ad taktı hepsi aynı kapıyı çizdi. Adın ne olduğu önemli değil **usta** — önemli olan kimin açtığı.”"
+    },
+    {
+      "id": "boss.baslik1",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "SAVAŞ TAKTİĞİ"
+    },
+    {
+      "id": "boss.madde1",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "Üç **zayıf nokta** var; her an yalnız biri parlar (camgöbeği). Uçarak yaklaş, matkabı değdir, hemen kaç."
+    },
+    {
+      "id": "boss.madde2",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "**Dinamiti (1)** parlayan çekirdeğin dibinde patlat — en büyük hasar odur."
+    },
+    {
+      "id": "boss.madde3",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "Magma toplarından kaç, lav havuzuna düşme."
+    },
+    {
+      "id": "boss.madde4",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "**Mazotun akmaya devam ediyor.** Uzun savaş = ölüm. Hızlı ol."
+    },
+    {
+      "id": "boss.dugme",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "HADİ BAKALIM"
+    },
+    {
+      "id": "boss.hudIsim",
+      "bolum": "4 · Boss girişi (-10.000 m)",
+      "text": "ŞEYTAN"
+    },
+    {
+      "id": "final.h1",
+      "bolum": "5 · Final",
+      "text": "MÜHÜR"
+    },
+    {
+      "id": "final.paragraf1",
+      "bolum": "5 · Final",
+      "text": "Suret dağılırken tavan çöker. Davut Usta son dinamitini sandığın altına sıkıştırır — kaldırmak için değil, **yerine oturtmak** için."
+    },
+    {
+      "id": "final.paragraf2",
+      "bolum": "5 · Final",
+      "text": "Patlama kapağı kapatır. Acil durum ışınlayıcısı, ASELSAN yapımı bir kere olsun iş görür."
+    },
+    {
+      "id": "final.paragraf3",
+      "bolum": "5 · Final",
+      "text": "Yüzeyde gün doğuyor. Maden ağzından toz yükseliyor. Karanlık Holding'in Zonguldak ofisinde kimse yok kayıtlara göre orada kırk yıldır kimse çalışmamış. Rıza Başkan, Remzi, Cabbar Usta ve Şükrü maden ağzında bekliyorlar. Hiçbiri \"ne buldun\" diye sormuyor."
+    },
+    {
+      "id": "final.diyalog1",
+      "bolum": "5 · Final",
+      "text": "CABBAR USTA: “Kaportayı yaparım. Matkabı da bilerim. Sen otur, çayını iç.”"
+    },
+    {
+      "id": "final.paragraf4",
+      "bolum": "5 · Final",
+      "text": "Davut Usta akşam dedesinin defterini açıyor. Son yazılı satırın altına on sekizinci damga olarak kendi işaretini vuruyor ve tek bir cümle yazıyor:"
+    },
+    {
+      "id": "final.diyalog2",
+      "bolum": "5 · Final",
+      "text": "“Baktım. Duruyor. Sıradaki sensin.”"
+    },
+    {
+      "id": "final.paragraf5",
+      "bolum": "5 · Final",
+      "text": "Sandık aşağıda kaldı. Zaten hiç çıkarılacak bir şey değildi."
+    },
+    {
+      "id": "final.imza",
+      "bolum": "5 · Final",
+      "text": "— SON —  Derin Anadolu: Ahit Sandığı"
+    },
+    {
+      "id": "olum.baslik",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "HADİ BE ORADAN!"
+    },
+    {
+      "id": "olum.sebep.mazot",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Mazot bitti. Köstebek-V1 karanlıkta kaldı."
+    },
+    {
+      "id": "olum.sebep.sasi",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Şasi dağıldı. Köstebek-V1 hurdaya çıktı."
+    },
+    {
+      "id": "olum.taziye1",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Davut Usta yamalı sacın arkasından bağırdı \"Hadi be oradan!\""
+    },
+    {
+      "id": "olum.taziye2",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Köstebek-V1 hurdaya çıktı. Cabbar Usta duysa üzülür."
+    },
+    {
+      "id": "olum.taziye3",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Remzi çayı tazelemişti. Soğudu."
+    },
+    {
+      "id": "olum.devam",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Neyse ki dede her şeyi deftere yazmıştı — ve Davut Usta da yazmaya devam ediyor."
+    },
+    {
+      "id": "olum.enkaz",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Kasandaki **{birim} birim** maden {derinlik} metrede, enkazın içinde kaldı. Değeri **{tutar}**. Yerini haritada işaretledim gidip alırsan senindir."
+    },
+    {
+      "id": "olum.sigorta",
+      "bolum": "6 · Ölüm ekranı",
+      "text": "Kurtarmaya gücün yetmezse Rıza Başkan hurda sigortasıyla %{oran}'ini nakit öder."
+    },
+    {
+      "id": "koop.tabela",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "MADEN KOOPERATİFİ"
+    },
+    {
+      "id": "koop.sahip",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Rıza Başkan — kooperatif müdürü"
+    },
+    {
+      "id": "koop.dolu",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Getir bakalım, tartalım. Boru değil bu Anadolu'nun kanı."
+    },
+    {
+      "id": "koop.bos",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Elin boş gelmişsin usta. Mazotu yak da bir şeyler getir."
+    },
+    {
+      "id": "koop.bosSatir",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Kasa bomboş. Dipte iş var Davut."
+    },
+    {
+      "id": "koop.sigortaBaslik",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "HURDA SİGORTASI"
+    },
+    {
+      "id": "koop.sigortaReplik",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "{derinlik} metrede bir enkazın var diye duydum. Bak, ben o yükü uzaktan da alırım ama yarısını bile veremem, riziko bende."
+    },
+    {
+      "id": "koop.sigortaNot",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Satarsan enkaz kaybolur. Kendin gidip kurtarırsan tamamı senin."
+    },
+    {
+      "id": "remzi.tabela",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "ÇAYCI & AKARYAKITÇI REMZİ"
+    },
+    {
+      "id": "remzi.sahip",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Remzi — 30 yıldır aynı semaver"
+    },
+    {
+      "id": "remzi.karsilama",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Çay demli, mazot bol. Otur bir demle, sonra in aşağı."
+    },
+    {
+      "id": "remzi.not",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Not: Uçmak, yerde gitmekten ~3 kat fazla mazot yakar. Derine inerken serbest düşüşü kullan yukarı çıkarken tünelini takip et."
+    },
+    {
+      "id": "cabbar.tabela",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "SANAYİ SİTESİ"
+    },
+    {
+      "id": "cabbar.sahip",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Kaportacı Cabbar Usta"
+    },
+    {
+      "id": "cabbar.karsilama",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Getir şu hurdayı, bi' bakayım... Bu motorla yedi kat dibe inilmez oğlum."
+    },
+    {
+      "id": "sukru.tabela",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "BAKKAL"
+    },
+    {
+      "id": "sukru.sahip",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Bakkal Şükrü — veresiye defteri kalın"
+    },
+    {
+      "id": "sukru.karsilama",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "Dinamit mi? Var var. Ama bu sefer peşin usta, defter doldu."
+    },
+    {
+      "id": "tabela.kooperatif",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "MADEN KOOPERATİFİ"
+    },
+    {
+      "id": "tabela.akaryakit",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "ÇAYCI & PETROL REMZİ"
+    },
+    {
+      "id": "tabela.sanayi",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "SANAYİ SİTESİ"
+    },
+    {
+      "id": "tabela.bakkal",
+      "bolum": "7 · Esnaf ve dükkânlar",
+      "text": "BAKKAL"
+    },
+    {
+      "id": "msg.baslangic",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Davut Usta: \"Bismillah. Köstebek çalışıyor.\""
+    },
+    {
+      "id": "msg.devam",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Son kayıttan devam ediliyor."
+    },
+    {
+      "id": "msg.kayitBozuk",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Kayıt okunamadı, yeni sefer açılıyor."
+    },
+    {
+      "id": "msg.aksaklik",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Bir aksaklık oldu ama oyun devam ediyor."
+    },
+    {
+      "id": "msg.kaydedildi",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Kaydedildi."
+    },
+    {
+      "id": "msg.matkapYetersiz",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Matkap yetersiz! ({kaya} — {matkap} kesmiyor)"
+    },
+    {
+      "id": "msg.kirilmaz",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Bu kaya kırılmıyor. Yol başka yerden."
+    },
+    {
+      "id": "msg.kasaDolu",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Kasa dolu! Rıza Başkan'a uğra."
+    },
+    {
+      "id": "msg.grizuGuvenli",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Grizu güvenle boşaltıldı. (Yavaş kazma işe yaradı)"
+    },
+    {
+      "id": "msg.grizuPatladi",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "GRİZU! Hızlı delme — patladı. (SHIFT ile yavaş kaz)"
+    },
+    {
+      "id": "msg.deprem",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "DEPREM! Tavan oynuyor, dikkat et Davut!"
+    },
+    {
+      "id": "hasar.grizu",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "GRİZU PATLAMASI!"
+    },
+    {
+      "id": "hasar.inis",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Sert iniş!"
+    },
+    {
+      "id": "hasar.inisAgir",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Sert iniş! (yük ağır)"
+    },
+    {
+      "id": "hasar.dinamit",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Dinamite fazla yaklaştın!"
+    },
+    {
+      "id": "hasar.magma",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Magma topu yedin!"
+    },
+    {
+      "id": "hasar.carpma",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Golem çarptı!"
+    },
+    {
+      "id": "kullan.yok",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "O eşyadan yok. Bakkala uğra."
+    },
+    {
+      "id": "kullan.dinamit",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Dinamit bırakıldı — kaç!"
+    },
+    {
+      "id": "kullan.depoDolu",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Depo zaten dolu."
+    },
+    {
+      "id": "kullan.isinla",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "ASELSAN ışınlayıcısı çalıştı. Yüzeydesin."
+    },
+    {
+      "id": "kullan.sasiSaglam",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Şasi zaten sapasağlam."
+    },
+    {
+      "id": "enkaz.kayboldu",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Önceki enkazın kayboldu. Aynı anda tek enkaz taşınabilir."
+    },
+    {
+      "id": "enkaz.kasaDolu",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Kasan dolu — enkazdan bir şey alamıyorsun."
+    },
+    {
+      "id": "enkaz.kismi",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "{alınan} birim kurtarıldı, {kalan} birim enkazda kaldı."
+    },
+    {
+      "id": "enkaz.tam",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Enkaz kurtarıldı! Köstebek'in yükü geri sende."
+    },
+    {
+      "id": "dukkan.satis",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Rıza Başkan {tutar} saydı."
+    },
+    {
+      "id": "dukkan.sigorta",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Enkaz sigortaya devredildi. {tutar} alındı."
+    },
+    {
+      "id": "dukkan.mazot",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "{litre} L mazot alındı."
+    },
+    {
+      "id": "dukkan.cay",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Remzi bir tavşankanı tazeledi. Davut Usta'nın keyfi yerinde."
+    },
+    {
+      "id": "dukkan.yukseltme",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "{donanım}: {parça} takıldı!"
+    },
+    {
+      "id": "dukkan.tamir",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Cabbar Usta kaportayı düzeltti."
+    },
+    {
+      "id": "dukkan.esya",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "{eşya} alındı."
+    },
+    {
+      "id": "boss.basladi",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "MÜHÜR KIRILDI. Dinamitlerini boşa harcama!"
+    },
+    {
+      "id": "boss.lav",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Yer sarsılıyor — lav fışkırıyor!"
+    },
+    {
+      "id": "boss.varil",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Yukarıdan bir mazot varili düştü."
+    },
+    {
+      "id": "boss.faz2",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "\"Bin yıl bekledim usta. Sen kırk yılda kazdın. Teşekkür ederim.\""
+    },
+    {
+      "id": "boss.cekirdek",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Tam çekirdeğe! Cabbar Usta gurur duyardı."
+    },
+    {
+      "id": "boss.yenildi",
+      "bolum": "8 · Oyun içi kısa mesajlar",
+      "text": "Suret dağılıyor... SANDIĞI YERİNE OTURT! Işınlayıcı otomatik devrede!"
+    },
+    {
+      "id": "donanim.drill",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Matkap Ucu"
+    },
+    {
+      "id": "donanim.drill.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Daha sert kayaçları deler, kazma süresini kısaltır."
+    },
+    {
+      "id": "donanim.drill.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çıkma Matkap"
+    },
+    {
+      "id": "donanim.drill.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çelik Matkap"
+    },
+    {
+      "id": "donanim.drill.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Elmas Uçlu Matkap"
+    },
+    {
+      "id": "donanim.drill.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Lazer Delici"
+    },
+    {
+      "id": "donanim.drill.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Titanyum Matkap"
+    },
+    {
+      "id": "donanim.tank",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Yakıt Deposu"
+    },
+    {
+      "id": "donanim.tank.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Yeraltında daha uzun kalırsın."
+    },
+    {
+      "id": "donanim.tank.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Sanayi Bidonu"
+    },
+    {
+      "id": "donanim.tank.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çift Depo"
+    },
+    {
+      "id": "donanim.tank.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Takviye Tank"
+    },
+    {
+      "id": "donanim.tank.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Basınçlı Tank"
+    },
+    {
+      "id": "donanim.tank.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Mega Depo"
+    },
+    {
+      "id": "donanim.cargo",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Kasa Kapasitesi"
+    },
+    {
+      "id": "donanim.cargo.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Tek seferde daha çok maden taşırsın."
+    },
+    {
+      "id": "donanim.cargo.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Römork"
+    },
+    {
+      "id": "donanim.cargo.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Genişletilmiş Kasa"
+    },
+    {
+      "id": "donanim.cargo.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Damperli Kasa"
+    },
+    {
+      "id": "donanim.cargo.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Konteyner"
+    },
+    {
+      "id": "donanim.cargo.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Ambar"
+    },
+    {
+      "id": "donanim.engine",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Motor"
+    },
+    {
+      "id": "donanim.engine.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Yerçekimine karşı daha güçlü kaldırır."
+    },
+    {
+      "id": "donanim.engine.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Traktör Motoru"
+    },
+    {
+      "id": "donanim.engine.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Turbo Dizel"
+    },
+    {
+      "id": "donanim.engine.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çift Pervane"
+    },
+    {
+      "id": "donanim.engine.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Jet Türbini"
+    },
+    {
+      "id": "donanim.engine.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Steampunk Reaktör"
+    },
+    {
+      "id": "donanim.hull",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Şasi / Kaporta"
+    },
+    {
+      "id": "donanim.hull.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Düşme, patlama ve darbelere dayanım."
+    },
+    {
+      "id": "donanim.hull.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Hurda Sac"
+    },
+    {
+      "id": "donanim.hull.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çelik Sac"
+    },
+    {
+      "id": "donanim.hull.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Takviye Şasi"
+    },
+    {
+      "id": "donanim.hull.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Zırhlı Kaporta"
+    },
+    {
+      "id": "donanim.hull.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Titanyum Gövde"
+    },
+    {
+      "id": "donanim.radiator",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Radyatör"
+    },
+    {
+      "id": "donanim.radiator.aciklama",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Derinlerdeki sıcaklık hasarını engeller."
+    },
+    {
+      "id": "donanim.radiator.sv1",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Petek"
+    },
+    {
+      "id": "donanim.radiator.sv2",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Bakır Petek"
+    },
+    {
+      "id": "donanim.radiator.sv3",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Çift Fanlı"
+    },
+    {
+      "id": "donanim.radiator.sv4",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Kriyojenik"
+    },
+    {
+      "id": "donanim.radiator.sv5",
+      "bolum": "9 · Donanım ağacı",
+      "text": "Bor Soğutmalı"
+    },
+    {
+      "id": "esya.dinamit",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Dinamit"
+    },
+    {
+      "id": "esya.dinamit.aciklama",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Sert kayaları ve aşağıdaki şeyi patlatır. (Bırak: 1)"
+    },
+    {
+      "id": "esya.mazot",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Yedek Mazot Bidonu"
+    },
+    {
+      "id": "esya.mazot.aciklama",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Yeraltında +60 litre mazot."
+    },
+    {
+      "id": "esya.isinlayici",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Acil Durum Işınlayıcısı"
+    },
+    {
+      "id": "esya.isinlayici.aciklama",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "ASELSAN yapımı. Anında yüzeye ışınlar (yük korunur)."
+    },
+    {
+      "id": "esya.macun",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Yapılandırıcı Macun"
+    },
+    {
+      "id": "esya.macun.aciklama",
+      "bolum": "10 · Bakkal eşyaları",
+      "text": "Yeraltında şasiyi +70 can tamir eder."
+    },
+    {
+      "id": "ad.karo.11",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Kömür"
+    },
+    {
+      "id": "ad.karo.12",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Bakır"
+    },
+    {
+      "id": "ad.karo.13",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Gümüş"
+    },
+    {
+      "id": "ad.karo.14",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Altın"
+    },
+    {
+      "id": "ad.karo.15",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Oltu Taşı"
+    },
+    {
+      "id": "ad.karo.16",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Lületaşı"
+    },
+    {
+      "id": "ad.karo.17",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "BOR"
+    },
+    {
+      "id": "ad.karo.18",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Hitit Tableti"
+    },
+    {
+      "id": "ad.karo.19",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Osmanlı Altını"
+    },
+    {
+      "id": "ad.karo.10",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Grizu"
+    },
+    {
+      "id": "ad.karo.5",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Kaya"
+    },
+    {
+      "id": "ad.karo.6",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Sert Kayaç"
+    },
+    {
+      "id": "ad.karo.8",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Obsidyen"
+    },
+    {
+      "id": "ad.katman.1",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Yüzey Damarları"
+    },
+    {
+      "id": "ad.katman.2",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Gri Şist"
+    },
+    {
+      "id": "ad.katman.3",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Kızıl Derinlik"
+    },
+    {
+      "id": "ad.katman.4",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Bor Kuşağı"
+    },
+    {
+      "id": "ad.katman.5",
+      "bolum": "11 · Maden, kaya ve katman adları",
+      "text": "Yedi Kat Dip"
+    },
+    {
+      "id": "rehber.h1",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "NASIL OYNANIR"
+    },
+    {
+      "id": "rehber.dongu.baslik",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "TEMEL DÖNGÜ"
+    },
+    {
+      "id": "rehber.dongu",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "Yüzeyden başla → aşağı kaz → kasan dolana veya mazotun bitmeye yaklaşana kadar maden topla → yüzeye dön → sat, mazot al, tamir ettir, donanım geliştir → daha derine in."
+    },
+    {
+      "id": "rehber.hayatta.baslik",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "HAYATTA KALMA"
+    },
+    {
+      "id": "rehber.hayatta1",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "**Mazot** biterse ya da **şasi** sıfırlanırsa araç patlar, son kayıttan başlarsın."
+    },
+    {
+      "id": "rehber.hayatta2",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "Yüksekten hızlı düşmek şasiyi yer — inişte **W** ile frenle."
+    },
+    {
+      "id": "rehber.hayatta3",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "**Grizu** (yeşil parıltılı karo) hızlı delinirse patlar. **SHIFT** ile yavaş kaz."
+    },
+    {
+      "id": "rehber.hayatta4",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "4000 m'den sonra **lav** başlar; radyatörün yetmediği derinlikte araç kızar."
+    },
+    {
+      "id": "rehber.hayatta5",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "6000-9000 m arasında **deprem** olur."
+    },
+    {
+      "id": "rehber.harita.baslik",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "DERİNLİK HARİTASI"
+    },
+    {
+      "id": "rehber.not",
+      "bolum": "12 · Nasıl Oynanır ekranı",
+      "text": "Hitit Tabletleri ve Osmanlı Altınları haritaya rastgele saçılmıştır; her biri ₺50.000 eder."
+    },
+    {
+      "id": "mola.h1",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "MOLA"
+    },
+    {
+      "id": "mola.replik",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "Davut Usta termosun kapağını açtı. Çay soğumuş."
+    },
+    {
+      "id": "hud.mazot",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "MAZOT"
+    },
+    {
+      "id": "hud.sasi",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "ŞASİ"
+    },
+    {
+      "id": "hud.kasa",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "KASA"
+    },
+    {
+      "id": "hud.agir",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "AĞIR YÜK"
+    },
+    {
+      "id": "hud.enkaz",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "ENKAZ"
+    },
+    {
+      "id": "hud.dinamit",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "DİNAMİT"
+    },
+    {
+      "id": "hud.bidon",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "BİDON"
+    },
+    {
+      "id": "hud.isinla",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "IŞINLA"
+    },
+    {
+      "id": "hud.macun",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "MACUN"
+    },
+    {
+      "id": "dokun.yavas",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "YAVAŞ"
+    },
+    {
+      "id": "dokun.kaz",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "KAZ"
+    },
+    {
+      "id": "dokun.uc",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "UÇ"
+    },
+    {
+      "id": "dokun.gir",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "GİR"
+    },
+    {
+      "id": "dugme.yeni",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "YENİ OYUN"
+    },
+    {
+      "id": "dugme.devam",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "DEVAM ET"
+    },
+    {
+      "id": "dugme.rehber",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "NASIL OYNANIR"
+    },
+    {
+      "id": "dugme.sat",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "HEPSİNİ SAT"
+    },
+    {
+      "id": "dugme.fulle",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "DEPOYU FULLE — {tutar}"
+    },
+    {
+      "id": "dugme.cay",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "ÇAY İÇ (BEDAVA)"
+    },
+    {
+      "id": "dugme.cik",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "ÇIK (ESC)"
+    },
+    {
+      "id": "dugme.sonKayit",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "SON KAYITTAN DEVAM"
+    },
+    {
+      "id": "dugme.anaMenu",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "ANA MENÜ"
+    },
+    {
+      "id": "surum.not",
+      "bolum": "13 · Mola ekranı ve arayüz etiketleri",
+      "text": "Sürüm {sürüm} · Kayıt tarayıcına (bu cihaza) yazılır. Gizli sekmede veya site verisini silersen kaybolur."
+    }
+  ],
+  "not": "Taban = kullanıcının 18.09 düzenlemesi (29 metin). Word dosyası ile birebir."
+}

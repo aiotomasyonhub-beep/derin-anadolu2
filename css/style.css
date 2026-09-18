@@ -1,0 +1,447 @@
+/* ============================================================
+   DERİN ANADOLU — 16-bit Anadolu Pixel-Art / Steampunk arayüzü
+   Renk paleti: gece maviliği + neon tabela pembesi/camgöbeği +
+   semaver pirinci (sarı). Her şey keskin köşeli, anti-alias yok.
+   ============================================================ */
+
+:root{
+  --bg:        #07060d;
+  --panel:     #12101f;
+  --panel-2:   #1b1830;
+  --ink:       #e8e2d0;   /* eski gazete beyazı */
+  --neon-pink: #ff3d8b;
+  --neon-cyan: #35f0e8;
+  --neon-yellow:#ffd23f;
+  --rust:      #c2571f;   /* pas / traktör turuncusu */
+  --coal:      #2a2636;
+  --danger:    #ff4438;
+  --ok:        #5ddc6a;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+html, body{ height:100%; }
+
+body{
+  background:
+    radial-gradient(circle at 50% 0%, #1a1430 0%, #07060d 60%),
+    var(--bg);
+  min-height:100vh;
+  min-height:100dvh;                 /* mobil tarayıcı çubuğu hesaba katılsın */
+  display:flex; align-items:center; justify-content:center;
+  font-family: "Courier New", ui-monospace, monospace;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:var(--ink);
+  overflow:hidden;
+  /* Dokunmatikte sayfa kaydırma / çift dokunup yakınlaştırma kapalı */
+  touch-action:none;
+  -webkit-user-select:none; user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  overscroll-behavior:none;
+}
+
+/* --- Atari kabini çerçevesi --- */
+#cabinet{
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+}
+/* Ekran her zaman 16:9 kalır; genişlik, yükseklik ve 1280px sınırlarının
+   en küçüğünü alır. Böylece masaüstünde net 2x, telefonda tam ekran olur. */
+#screen{
+  position:relative;
+  width:min(1280px, 98vw, calc((100dvh - 92px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  border:4px solid #2c2547;
+  box-shadow:
+    0 0 0 4px #0a0812,
+    0 0 26px rgba(53,240,232,.18),
+    0 0 60px rgba(255,61,139,.14);
+  background:#000;
+  overflow:hidden;
+}
+#game{
+  width:100%; height:100%; display:block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* CRT tarama çizgisi efekti (isteğe bağlı, kapatmak için display:none) */
+#screen::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:repeating-linear-gradient(
+    to bottom, rgba(0,0,0,.16) 0 2px, rgba(0,0,0,0) 2px 4px);
+  mix-blend-mode:multiply;
+}
+
+#cabinet-foot{
+  display:flex; gap:18px; align-items:baseline;
+  font-size:12px;
+}
+#cabinet-foot .hint{ color:#7c749a; font-weight:normal; }
+#cabinet-foot b{ color:var(--neon-yellow); }
+
+.neon-pink  { color:var(--neon-pink);  text-shadow:0 0 8px var(--neon-pink); }
+.neon-cyan  { color:var(--neon-cyan);  text-shadow:0 0 8px var(--neon-cyan); }
+.neon-yellow{ color:var(--neon-yellow);text-shadow:0 0 8px var(--neon-yellow); }
+
+.hidden{ display:none !important; }
+
+/* ============================================================
+   HUD
+   ============================================================ */
+#hud{ position:absolute; inset:0; pointer-events:none; font-size:13px; }
+
+.hud-top{
+  position:absolute; top:10px; left:12px;
+  display:flex; flex-direction:column; gap:6px;
+}
+.gauge{ display:flex; align-items:center; gap:8px; }
+.gauge-label{ width:56px; font-size:11px; color:#9c94bd; }
+.gauge-num{ font-size:11px; color:var(--ink); min-width:74px; }
+
+.bar{
+  width:190px; height:14px;
+  background:#0d0b18;
+  border:2px solid #322b52;
+  padding:2px;
+}
+.bar.big{ width:420px; height:18px; }
+.bar-fill{ height:100%; width:100%; transition:width .12s linear; }
+.bar-fill.fuel { background:linear-gradient(90deg,#ff8a00,#ffd23f); }
+.bar-fill.hull { background:linear-gradient(90deg,#c2571f,#5ddc6a); }
+.bar-fill.cargo{ background:linear-gradient(90deg,#35f0e8,#3d7bff); }
+.bar-fill.boss { background:linear-gradient(90deg,#6b0b0b,#ff3d1f,#ffd23f); }
+
+/* Uçan maden kasa barına vardığında bir an parlar */
+.bar-fill.pulse{ animation:cargoPulse .22s steps(3, end); }
+@keyframes cargoPulse{
+  0%   { filter:brightness(2.6); transform:scaleY(1.55); }
+  100% { filter:brightness(1);   transform:scaleY(1); }
+}
+
+/* "AĞIR YÜK" rozeti */
+.tag{
+  font-size:9px; padding:1px 5px; letter-spacing:1px;
+  background:#4a2a08; color:var(--neon-yellow);
+  border:1px solid #8a5a10;
+  animation:blink 1.4s steps(2,end) infinite;
+}
+
+#wreckHud{
+  font-size:12px; color:var(--neon-cyan);
+  text-shadow:0 0 8px var(--neon-cyan);
+  animation:blink 1.8s steps(2,end) infinite;
+}
+
+.hud-right{
+  position:absolute; top:10px; right:14px;
+  text-align:right; font-size:20px; line-height:1.4;
+}
+
+#itembar{
+  position:absolute; bottom:10px; left:12px; display:flex; gap:8px;
+}
+#itembar .item{
+  background:rgba(18,16,31,.85);
+  border:2px solid #322b52;
+  padding:4px 8px; font-size:10px; text-align:center; min-width:62px;
+  position:relative;
+}
+#itembar .item b{ display:block; color:var(--neon-yellow); font-size:12px; }
+#itembar .item span{ color:#9c94bd; }
+#itembar .item i{
+  position:absolute; right:3px; top:2px; font-style:normal;
+  color:var(--neon-cyan); font-size:11px;
+}
+#itembar .item.empty{ opacity:.35; }
+
+#bossbar{
+  position:absolute; top:14px; left:50%; transform:translateX(-50%);
+  text-align:center;
+}
+.boss-name{
+  display:block; color:var(--danger); font-size:14px; margin-bottom:4px;
+  text-shadow:0 0 10px var(--danger);
+}
+
+#prompt{
+  position:absolute; bottom:78px; left:50%; transform:translateX(-50%);
+  background:rgba(7,6,13,.9); border:2px solid var(--neon-cyan);
+  color:var(--neon-cyan); padding:6px 14px; font-size:14px;
+  text-shadow:0 0 8px var(--neon-cyan);
+  animation:blink 1.1s steps(2,end) infinite;
+}
+@keyframes blink{ 50%{ opacity:.45; } }
+
+/* ============================================================
+   TELSİZ — anlatı mesajları
+   Derinlik arttıkça parazit artar: s0 sakin camgöbeği, s1 kehribar
+   ve hafif titreşim, s2 kırmızı ve bozuk sinyal.
+   ============================================================ */
+/* Konum ÜSTTE: alt yarıda eşya çubuğu, dokunmatik düğmeler ve toast'lar
+   kavga ediyor. Üst orta hem her platformda boş hem de "gelen anlatım"
+   diline uyuyor. */
+/* ORTALAMA transform İLE YAPILMAZ. Titreme animasyonu da kaydırma yapıyor;
+   ikisi aynı `transform` özelliğini paylaşırsa animasyon ortalamayı ezer ve
+   panel her döngüde yarım genişlik sağa kayar (yaşandı). Ortalama left/right
+   + margin ile, kaydırma ise ayrı `translate` özelliğiyle yapılır — ikisi
+   birbirinden bağımsız çalışır. */
+#radio{
+  position:absolute; top:84px; left:0; right:0; margin-inline:auto;
+  width:min(560px, 78%);
+  background:rgba(4,3,9,.93);
+  border:2px solid var(--neon-cyan);
+  border-left-width:6px;
+  padding:10px 14px 12px;
+  pointer-events:none;
+  animation:radioIn .18s steps(3);
+}
+@keyframes radioIn{ from{ opacity:0; translate:0 -8px; } }
+
+#radio .radio-who{
+  display:block; font-size:10px; letter-spacing:2px;
+  color:var(--neon-cyan); margin-bottom:5px;
+}
+#radio .radio-text{
+  font-size:12px; line-height:1.65; color:#d6d0e8;
+  font-weight:normal; white-space:pre-line; margin:0;
+}
+
+/* parazit seviyeleri */
+#radio.s1{ border-color:var(--neon-yellow); animation:radioIn .18s steps(3), radioFlickerA 2.6s steps(2) infinite; }
+#radio.s1 .radio-who{ color:var(--neon-yellow); }
+#radio.s2{ border-color:var(--danger); animation:radioIn .18s steps(3), radioFlickerB 1.1s steps(2) infinite; }
+#radio.s2 .radio-who{ color:var(--danger); }
+#radio.s2 .radio-text{ color:#e8c9c5; }
+
+@keyframes radioFlickerA{ 96%{ opacity:1; } 97%{ opacity:.55; } 100%{ opacity:1; } }
+@keyframes radioFlickerB{
+  90%{ opacity:1;   translate:0 0; }
+  93%{ opacity:.35; translate:2px -1px; }
+  96%{ opacity:1;   translate:-2px 1px; }
+  100%{ opacity:1;  translate:0 0; }
+}
+
+/* ============================================================
+   HAREKET AZALTMA — erişilebilirlik
+   Telsizin titremesi, yanıp sönen rozetler ve kasa nabzı; hareketten
+   rahatsız olan (ya da ışık titremesine duyarlı) oyuncu için kapanır.
+   Öğeler animasyonsuz da görünür durumdadır: dinlenme hâli opaklık 1.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  #radio, #radio.s1, #radio.s2,
+  .tag, #wreckHud, #prompt,
+  .bar-fill.pulse, .toast{ animation:none !important; }
+  #screen::after{ display:none; }          /* CRT tarama çizgileri */
+}
+
+#toasts{
+  position:absolute; bottom:120px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+}
+.toast{
+  background:rgba(7,6,13,.88); border-left:4px solid var(--neon-yellow);
+  padding:5px 12px; font-size:13px; color:var(--ink);
+  animation:toastIn .18s steps(3) ;
+}
+.toast.bad { border-color:var(--danger); color:#ffb4ae; }
+.toast.good{ border-color:var(--ok);     color:#c8ffcd; }
+@keyframes toastIn{ from{ transform:translateY(8px); opacity:0; } }
+
+/* ============================================================
+   MODAL PANELLER (dükkanlar, menüler)
+   ============================================================ */
+#overlay{
+  position:absolute; inset:0; background:rgba(4,3,9,.82);
+  display:flex; align-items:center; justify-content:center;
+  z-index:20;
+}
+#panel{
+  width:min(780px, 92%); max-height:88%; overflow-y:auto;
+  background:
+    linear-gradient(180deg, var(--panel-2), var(--panel));
+  border:3px solid #3a3160;
+  box-shadow:0 0 0 3px #0a0812, 0 0 34px rgba(255,61,139,.25);
+  padding:22px 26px;
+}
+#panel h1{
+  font-size:30px; color:var(--neon-pink);
+  text-shadow:3px 3px 0 #5a0d31, 0 0 16px var(--neon-pink);
+  margin-bottom:6px; line-height:1.15;
+}
+#panel h2{
+  font-size:20px; color:var(--neon-cyan); margin-bottom:10px;
+  text-shadow:2px 2px 0 #0a3b3a;
+}
+#panel h3{ font-size:14px; color:var(--neon-yellow); margin:14px 0 6px; }
+#panel p{ font-size:13px; line-height:1.65; color:#c9c2e0; margin-bottom:8px; font-weight:normal; }
+#panel .dim{ color:#7c749a; font-size:12px; }
+
+.npc-line{
+  border-left:4px solid var(--rust);
+  padding:8px 12px; margin:10px 0 16px;
+  background:rgba(194,87,31,.09);
+  font-size:13px; color:#ffd9b8; font-weight:normal;
+}
+
+.rows{ display:flex; flex-direction:column; gap:6px; }
+.row{
+  display:flex; align-items:center; gap:12px;
+  background:#0f0d1c; border:2px solid #2b2448; padding:8px 12px;
+}
+.row .nm{ flex:1; font-size:13px; }
+.row .lv{ font-size:11px; color:#9c94bd; min-width:120px; }
+.row .pr{ font-size:13px; color:var(--neon-yellow); min-width:110px; text-align:right; }
+.row.maxed{ opacity:.55; }
+
+button{
+  font-family:inherit; font-weight:bold; font-size:12px; letter-spacing:1px;
+  background:#2a2450; color:var(--ink);
+  border:2px solid #4b3f82; padding:7px 14px; cursor:pointer;
+  text-transform:uppercase;
+}
+button:hover:not(:disabled){ background:var(--neon-pink); color:#12101f; border-color:#ff8fbd; }
+button:disabled{ opacity:.35; cursor:not-allowed; }
+button.primary{ background:var(--neon-cyan); color:#06201f; border-color:#8dfff9; }
+button.primary:hover{ background:#fff; }
+button.danger{ border-color:#7b2020; }
+
+.actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+
+.kv{ display:flex; justify-content:space-between; font-size:13px; padding:3px 0; border-bottom:1px dashed #2b2448; }
+.kv span:last-child{ color:var(--neon-yellow); }
+
+.grid2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+.title-art{
+  font-size:11px; line-height:1.15; color:var(--rust);
+  white-space:pre; margin-bottom:10px; font-weight:normal;
+}
+
+/* ============================================================
+   SİSTEM DÜĞMELERİ (ses / duraklat)
+   ============================================================ */
+#sysbtns{
+  position:absolute; top:8px; right:8px;
+  display:flex; gap:6px; pointer-events:auto; z-index:6;
+}
+#sysbtns button{
+  width:30px; height:30px; padding:0; font-size:13px; line-height:1;
+  background:rgba(18,16,31,.85); border:2px solid #322b52; color:var(--neon-cyan);
+}
+#sysbtns button.off{ color:#6b6385; text-decoration:line-through; }
+
+/* HUD sağ blok, sistem düğmelerinin altına kaysın */
+.hud-right{ top:44px; }
+
+/* Eşya kutuları dokunmatikte basılabilir olmalı */
+#itembar{ pointer-events:auto; }
+#itembar .item{ cursor:pointer; }
+#itembar .item:active{ border-color:var(--neon-yellow); }
+
+/* ============================================================
+   DOKUNMATİK KONTROLLER
+   Yarı saydam, köşelere yaslı. Parmak altında kalan alan
+   görsel kutudan büyüktür (padding ile) ki ıskalanmasın.
+   ============================================================ */
+#touch{ position:absolute; inset:0; pointer-events:none; z-index:5; }
+#touch .tgroup{
+  position:absolute; bottom:12px; display:flex; gap:10px; pointer-events:auto;
+}
+#touch .tleft { left:12px; }
+#touch .tright{ right:12px; align-items:flex-end; }
+/* YAVAŞ, KAZ'ın üstüne istiflenir — dar telefonlarda yan yana sığmıyor */
+#touch .tcol{ display:flex; flex-direction:column; gap:8px; align-items:center; }
+
+.tbtn{
+  width:74px; height:74px; padding:0;
+  font-size:14px; line-height:1;
+  background:rgba(27,24,48,.62);
+  border:3px solid rgba(107,90,160,.75);
+  color:var(--ink);
+  border-radius:0;                 /* arcade: köşeler keskin */
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  touch-action:none;
+}
+.tbtn small{ font-size:9px; color:#9c94bd; margin-top:2px; }
+.tbtn:active, .tbtn.held{
+  background:rgba(255,61,139,.55);
+  border-color:var(--neon-pink);
+  color:#fff;
+}
+.tbtn.dig  { border-color:rgba(53,240,232,.8); color:var(--neon-cyan); }
+.tbtn.fly  { border-color:rgba(255,210,63,.8); color:var(--neon-yellow); }
+.tbtn.slow { width:74px; height:40px; font-size:10px; }
+/* "GİR" düğmesi üstte durur: alttaki yön/eşya kalabalığına karışmaz */
+.tbtn.act{
+  position:absolute; top:62px; left:50%; transform:translateX(-50%);
+  pointer-events:auto; width:92px; height:52px;
+  border-color:var(--neon-cyan); color:var(--neon-cyan);
+  background:rgba(7,6,13,.85);
+}
+
+/* ============================================================
+   MOBİL / DAR EKRAN
+   ============================================================ */
+@media (max-width: 900px), (pointer: coarse){
+  #cabinet{ gap:0; }
+  #cabinet-foot{ display:none; }          /* klavye ipucu telefonda gereksiz */
+  /* Telefonda ekranı tamamen doldur; canvas'ın İÇ çözünürlüğü js tarafında
+     gerçek en-boy oranına uyarlanır (Game.resizeCanvas), böylece dikey tutulunca
+     da harç harcanmaz — hatta madencilik için dikey görüş daha faydalıdır. */
+  #screen{
+    width:100vw; height:100dvh;
+    aspect-ratio:auto;
+    border-width:0;
+    box-shadow:none;
+  }
+  #hud{ font-size:11px; }
+  .bar{ width:110px; height:11px; }
+  .bar.big{ width:min(58vw, 320px); }
+  .gauge-label{ width:42px; font-size:9px; }
+  .gauge-num{ font-size:9px; min-width:56px; }
+  .hud-top{ top:6px; left:8px; gap:3px; }
+  .hud-right{ top:40px; right:10px; font-size:15px; }
+  #sysbtns button{ width:38px; height:38px; font-size:15px; }
+  #itembar{ bottom:96px; left:8px; gap:5px; }
+  #itembar .item{ min-width:52px; padding:3px 5px; font-size:8px; }
+  #prompt{ bottom:170px; font-size:12px; }
+  #toasts{ bottom:200px; max-width:86vw; }
+  #radio{ top:76px; width:88%; padding:8px 11px 10px; }
+  #radio .radio-text{ font-size:11px; line-height:1.6; }
+  #radio .radio-who{ font-size:9px; }
+  .toast{ font-size:11px; }
+  #panel{ width:94%; padding:16px 14px; max-height:92%; }
+  #panel h1{ font-size:21px; }
+  #panel h2{ font-size:15px; }
+  #panel p, .row .nm, .npc-line{ font-size:11px; }
+  .row{ flex-wrap:wrap; gap:6px; padding:7px 9px; }
+  .row .lv{ min-width:auto; font-size:10px; }
+  .row .pr{ min-width:auto; }
+  .grid2{ grid-template-columns:1fr; }
+  button{ font-size:11px; padding:9px 12px; }   /* parmak hedefi büyüsün */
+}
+
+/* Çok alçak ekranlarda (yatay telefon) kontrolleri küçült */
+@media (max-height: 430px) and (pointer: coarse){
+  .tbtn{ width:60px; height:60px; font-size:12px; }
+  .tbtn.slow{ width:60px; height:34px; font-size:9px; }
+  .tbtn.act{ top:54px; width:80px; height:44px; }
+  #touch .tgroup{ bottom:8px; }
+  #itembar{ bottom:76px; }
+  #toasts{ bottom:150px; }
+}
+
+/* Dar ekranlarda düğmeler biraz daralsın ki iki grup çakışmasın */
+@media (max-width: 400px){
+  .tbtn{ width:66px; height:66px; }
+  .tbtn.slow{ width:66px; height:36px; }
+  #touch .tgroup{ gap:8px; }
+}
+
+/* Dikey tutulan telefon: kontroller alta, oyun alanı yukarı */
+@media (orientation: portrait) and (pointer: coarse){
+  #touch .tgroup{ bottom:22px; }
+  #itembar{ bottom:112px; }
+  #toasts{ bottom:230px; }
+}
